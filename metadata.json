@@ -1,0 +1,7 @@
+{
+  "name": "Queen Shuling's War Room",
+  "description": "A specialized AI tutoring assistant for Wen Shuling, providing strategic briefings for parents and gamified, persona-based explanations for the child.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
