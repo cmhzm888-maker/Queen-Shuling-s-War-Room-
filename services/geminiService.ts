@@ -34,7 +34,7 @@ const analysisSchema: Schema = {
 export const analyzeImage = async (base64Image: string, mimeType: string): Promise<AnalysisResult> => {
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-pro-preview", // Using Gemini 3 as requested
+      model: "gemini-3-flash-preview", // Using Gemini 3 as requested
       contents: {
         parts: [
           {
@@ -69,7 +69,7 @@ export const analyzeImage = async (base64Image: string, mimeType: string): Promi
 
 export const createChatSession = (): Chat => {
   return ai.chats.create({
-    model: "gemini-3-pro-preview",
+    model: "gemini-3-flash-preview",
     config: {
       systemInstruction: `You are a helpful teaching assistant for Wen Shuling's mother.
       
